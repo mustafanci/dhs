@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :quote_details
   root 'welcome#index'
   get 'quote' => 'welcome#quote' 
 

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @quote_detail.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @quote_detail.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @quote_detail.phone %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @quote_detail.city %>
+</p>
+
+<p>
+  <strong>County:</strong>
+  <%= @quote_detail.county %>
+</p>
+
+<p>
+  <strong>Customer:</strong>
+  <%= @quote_detail.customer %>
+</p>
+
+<p>
+  <strong>Service:</strong>
+  <%= @quote_detail.service %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @quote_detail.description %>
+</p>
+
+<%#= link_to 'Edit', edit_quote_detail_path(@quote_detail) %> |
+<%= link_to 'Back', quote_details_path %>
