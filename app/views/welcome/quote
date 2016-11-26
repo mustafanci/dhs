@@ -1,0 +1,127 @@
+
+<html>
+    <body  overflow:hidden;>
+    <style>
+ 
+ input[type=text]:focus {
+    background-color: lightblue;
+}
+</style>
+  
+  <h4 align="center">
+                    <u>Hire Service Engineer</u></h4>
+            </div>
+            <br/>   <br/>   <br/>
+            
+                  <form method="post">
+                    <div class="form-group col-sm-12">
+                        <input type="text" class="form-control input-custom" placeholder="Your Name" id="name" >
+                        <div id="nameInput"  style="display:none;">
+                            <p style="color: red;">Please Enter Your Name</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group col-sm-6">
+                        <input type="text" class="form-control input-custom" placeholder="Email" id="email" name="Email" >
+                        <div id="emailInput" style="display:none;">
+                            <p style="color: red;">Please Enter Valid Email</p>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="text" class="form-control input-custom" placeholder="Phone Number" id="tel" name="ContactNumber" >
+                        <div id="telInput" style="display:none;">
+                            <p style ="color: red;"> Contact Number Should be 10 characters</p>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <input type="text" class="form-control input-custom" placeholder="Address" id="address" name="Address" >
+                        <div id="error_msg_address" style="display:none;">
+                            <p style="color: red;">Please Enter Valid Address</p>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="text" class="form-control input-custom" placeholder="City" id="City" name="City" >
+                        <div id="error_msg_city" style="display:none;">
+                            <p style="color: red;">Please Enter Valid City Name</p>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-6">                        
+                        <select id="State" class="form-control input-custom" name="county">
+                            <option value="">Select county</option>
+                            <option value="Antrim</option>
+                            <option value="Armagh">Armagh</option>
+                            <option value="Carlow">Carlow</option>
+                            <option value="Cavan">Cavan</option>
+                            <option value="Clare">Clare</option>
+                            <option value="Cork">Cork</option>
+                            <option value="Derry">Derry</option>
+                            <option value="Donegal">Donegal</option>
+                            <option value="Down">Down</option>
+                            <option value="Dublin">Dublin</option>
+                            <option value="Fermanagh">Fermanagh</option>
+                            <option value="Galway">Galway</option>
+                            <option value="Kerry">Kerry</option>
+                            <option value="Kildare">Kildare</option>
+                            <option value="Kilkenny">Kilkenny</option>
+                            <option value="Laois">Laois</option>
+                            <option value="Leitrim">Leitrim</option>
+                            <option value="Limerick">Limerick</option>
+                            <option value="Longford">Longford</option>
+                            <option value="Louth">Louth</option>
+                            <option value="Mayo">Mayo</option>
+                            <option value="Meath">Meath</option>
+                            <option value="Monaghan">Monaghan</option>
+                            <option value="Offaly">Offaly</option>
+                            <option value="Roscommon">Roscommon</option>
+                            <option value="Sligo">Sligo</option>
+                            <option value="Tipperary">Tipperary</option>
+                            <option value="Tyrone">Tyrone</option>
+                            <option value="Waterford">Waterford</option>
+                            <option value="Westmeath">Westmeath</option>
+                            <option value="Wexford">Wexford</option>
+                            <option value="Wicklow">Wicklow</option>
+                           
+                        </select>
+                        </div>
+                    <div class="form-group col-sm-12">
+                        <select id="lstServices" class="form-control input-custom" name="Service_Id">                          
+                        </select>
+                        <div id="error_msg_service" style="display:none;">
+                            <p style="color: red;">Please Choose A Service</p>
+                        </div>
+                    </div>
+                     <div class="form-group col-sm-12 btn-group">                        
+                         <label class="radio-inline" style="font-size: 17px; color: #555">
+                             <input name="Customer_type" id="Customer_type" value="customer" checked="" type="radio">Customer
+                         </label>
+                         <label class="radio-inline" style="font-size: 17px; color: #555">
+                             <input name="Customer_Type" id="Customer_type"  value="provider"  type="radio">Service Provider
+                         </label>
+                        
+                     </div>
+                    <div class="form-group col-sm-12">
+                        <textarea class="form-control input-custom" placeholder="Description.." id="message" name="Comments"></textarea>
+                        <div id="messageInput" style="display:none;">
+                            <p style="color: red;">Comments should not be greater than 999 characters</p>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-sm-12">
+                        <input type="submit" value="Submit" onclick="return validate()" >
+                        
+                            
+                        <div id="error_msg_form" class="text-center" style="display:none;">
+                            <p style="color: red;">Please Fill The Form</p>
+                        </div>
+                    </div>
+                </div>
+               
+</div>
+    </div>
+</div>
+        <script src="quote.js"></script>
+<!-- Modal End -->
+</body>
+</html>
