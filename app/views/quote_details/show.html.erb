@@ -1,44 +1,81 @@
-<p id="notice"><%= notice %></p>
+<p id="notice" ><%= notice %></p>
+  <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="/index">Dublin House-hold Services</a>
+            </div>
 
-<p>
-  <strong>Name:</strong>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                   <li>
+                        <a class="page-scroll" href="#quote">Request A Quote</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/index">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/index">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/index">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+      <br/><br/><br/><br/>
+      
+<p style="text-align:center;">
+  <strong >Name:</strong>
   <%= @quote_detail.name %>
 </p>
 
-<p>
+<p style="text-align:center;">
   <strong>Email:</strong>
   <%= @quote_detail.email %>
 </p>
 
-<p>
+<p style="text-align:center;">
   <strong>Phone:</strong>
   <%= @quote_detail.phone %>
 </p>
 
-<p>
+<p style="text-align:center;">
   <strong>City:</strong>
   <%= @quote_detail.city %>
 </p>
 
-<p>
+<p style="text-align:center;">
   <strong>County:</strong>
+  
   <%= @quote_detail.county %>
 </p>
 
-<p>
+<p style="text-align:center;">
   <strong>Customer:</strong>
   <%= @quote_detail.customer %>
 </p>
 
-<p>
+<p style="text-align:center;">
   <strong>Service:</strong>
   <%= @quote_detail.service %>
 </p>
 
-<p>
+<p style="text-align:center;">
   <strong>Description:</strong>
   <%= @quote_detail.description %>
 </p>
 
 <%#= link_to 'Edit', edit_quote_detail_path(@quote_detail) %> |
-<%= link_to 'Back', quote_details_path %>
+

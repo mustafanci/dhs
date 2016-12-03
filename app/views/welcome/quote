@@ -1,19 +1,61 @@
 
 <html>
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="/index">Dublin House-hold Services</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="/index"></a>
+                    </li>
+                   <li>
+                        <a class="page-scroll" href="/quote">Request A Quote</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/index">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/index">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/index">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
     <body  overflow:hidden;>
     <style>
  
  input[type=text]:focus {
     background-color: lightblue;
 }
+body {background-color: powderblue;}
 </style>
+<br/><br/><br/><br/>
   
   <h4 align="center">
                     <u>Hire Service Engineer</u></h4>
             </div>
             <br/>   <br/>   <br/>
             
-                  <form method="post">
+                  <form  action="layouts/wel" method="get" accept-charset="UTF-8">
                     <div class="form-group col-sm-12">
                         <input type="text" class="form-control input-custom" placeholder="Your Name" id="name" >
                         <div id="nameInput"  style="display:none;">
@@ -105,13 +147,14 @@
                             <p style="color: red;">Comments should not be greater than 999 characters</p>
                         </div>
                     </div>
-                    </form>
+                    </form >
                 </div>
-                <div class="modal-footer">
+               
+                <div align="center" >
                     <div class="col-sm-12">
-                        <input type="submit" value="Submit" onclick="return validate()" >
-                        
-                            
+                        <input id="submit_button" type="submit" value="Submit" onclick="return validate()"  >
+                        <input type="button" name="form1" value="Reset" onclick="resetForm()" >   
+                           
                         <div id="error_msg_form" class="text-center" style="display:none;">
                             <p style="color: red;">Please Fill The Form</p>
                         </div>
@@ -120,7 +163,9 @@
                
 </div>
     </div>
-</div>
+</div> 
+</form >
+
         <script src="quote.js"></script>
 <!-- Modal End -->
 </body>
